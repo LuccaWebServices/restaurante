@@ -1,0 +1,7 @@
+# robots.txt — gerado por build.mjs
+# Nota: os motores de busca só leem robots.txt na RAIZ do domínio.
+# Num site em utilizador.github.io/repositorio/ este ficheiro não é lido; com domínio próprio, é.
+User-agent: *
+Allow: /
+
+Sitemap: https://utilizador.github.io/restaurante-demo/sitemap.xml

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://utilizador.github.io/restaurante-demo/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://utilizador.github.io/restaurante-demo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utilizador.github.io/restaurante-demo/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://utilizador.github.io/restaurante-demo/"/>
+  </url>
+  <url>
+    <loc>https://utilizador.github.io/restaurante-demo/en/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://utilizador.github.io/restaurante-demo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utilizador.github.io/restaurante-demo/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://utilizador.github.io/restaurante-demo/"/>
+  </url>
+  <url>
+    <loc>https://utilizador.github.io/restaurante-demo/ementa/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://utilizador.github.io/restaurante-demo/ementa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utilizador.github.io/restaurante-demo/en/menu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://utilizador.github.io/restaurante-demo/ementa/"/>
+  </url>
+  <url>
+    <loc>https://utilizador.github.io/restaurante-demo/en/menu/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://utilizador.github.io/restaurante-demo/ementa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utilizador.github.io/restaurante-demo/en/menu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://utilizador.github.io/restaurante-demo/ementa/"/>
+  </url>
+  <url>
+    <loc>https://utilizador.github.io/restaurante-demo/privacidade/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://utilizador.github.io/restaurante-demo/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utilizador.github.io/restaurante-demo/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://utilizador.github.io/restaurante-demo/privacidade/"/>
+  </url>
+  <url>
+    <loc>https://utilizador.github.io/restaurante-demo/en/privacy/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://utilizador.github.io/restaurante-demo/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://utilizador.github.io/restaurante-demo/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://utilizador.github.io/restaurante-demo/privacidade/"/>
+  </url>
+</urlset>
