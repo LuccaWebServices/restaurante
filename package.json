@@ -1,0 +1,15 @@
+{
+  "name": "template-restaurante",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Template de site estático para restaurantes (PT-PT/EN), gerado a partir de site.config.js. Sem dependências.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs --serve",
+    "placeholders": "node tools/gerar-placeholders.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
