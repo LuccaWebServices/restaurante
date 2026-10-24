@@ -1,0 +1,122 @@
+/* =============================================================================
+   BASE — tipografia, links, foco, utilitários e animações
+   ============================================================================= */
+:root {
+  --header-h: 4.25rem;      /* atualizado por JS com a altura real do cabeçalho */
+  --mobile-bar-h: 0px;
+}
+:root.has-demo { --header-h: 6.5rem; }
+
+html {
+  scroll-padding-top: calc(var(--header-h) + 0.75rem);
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  padding-top: var(--header-h);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-tracking);
+  line-height: 1.2;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+a {
+  color: var(--accent-text);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+a:hover { color: var(--accent-text); text-decoration-thickness: 2px; }
+
+::selection { background: var(--accent); color: var(--accent-contrast); }
+
+img, svg { max-width: 100%; height: auto; }
+img { display: block; }
+
+/* Foco visível e consistente em todos os temas */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.btn:focus-visible,
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  box-shadow: none;
+  border-color: var(--focus);
+}
+main:focus { outline: none; }
+
+/* Link "saltar para o conteúdo" */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 2000;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus { top: 1rem; color: var(--accent-contrast); }
+
+/* Ícones SVG (sprite) */
+.svg-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+.icon-lg { width: 1.35em; height: 1.35em; }
+.icon-xl { width: 1.75em; height: 1.75em; }
+
+/* Elementos que só fazem sentido com JavaScript */
+html:not(.js) .js-only { display: none !important; }
+
+.text-muted-theme { color: var(--muted); }
+.small, small { font-size: 0.875rem; }
+
+/* Animações ao aparecer (desligadas com "reduzir movimento") */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-on .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal-on .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Impressão: só o conteúdo (útil para imprimir a ementa) */
+@media print {
+  .site-header, .mobile-bar, .back-to-top, .lang-suggest, .menu-filter, .menu-nav, .map-consent, .site-footer .lang-switch { display: none !important; }
+  body { padding: 0; background: #fff; color: #000; }
+  .section { padding: 1rem 0 !important; background: #fff !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
